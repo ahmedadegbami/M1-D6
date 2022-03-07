@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 30%;
+            margin-left: 200px;
+        }
+
+        td, th {
+            margin-left: 0;
+            border: solid black;
+            padding: 2em;
+        }
+
+        footer{
+            text-align: center;
+        }
+        button{
+            margin-top: 1em;
+        }
+        body{
+            background-color: aqua;
+        }
+        aclass {
+            text-align: center;
+            margin-left: 265px;
+        }
+
+        
+    </style>
+</head>
+<body id="body">
+    <h1 id='id01'> Ahmed Furnitures</h1>
+
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td><img src="dinng-table.jpeg" alt="a dinng-table"><BR><a href="https://www.crateandbarrel.com/hayes-48-round-acacia-dining-table/s314111" target="_blank">VIEW</a></td>
+            <td>Hayes 48" Round Acacia Dining Table</td>
+            <td>Hayes' open fretwork of angled brass tubing finds its perfect complement in a round tabletop crafted of solid acacia planks </td>
+            <td>€1,099.00</td>
+        </tr>
+
+        <tr>
+            <td><img src="dinning-chair.jpeg" alt="a dinning-chair"><a href="https://www.crateandbarrel.com/taj-brown-woven-leather-dining-chair/s292447" target="_blank">VIEW</a></td>
+            <td>Taj Brown Woven Leather Dining Chair</td>
+            <td>The mid-century woven chair is having a modern moment in Taj. Supple leather is handcut and woven, wrapping through and
+            around a natural mindi wood frame </td>
+            <td >€499.00</td>
+        </tr>
+
+        <tr>
+            <td><img src="tv-stand.jpeg" alt="a tv-stand"><a href="https://www.crateandbarrel.com/prairie-80-media-console/s222655" target="_blank">VIEW</a></td>
+            <td>Prairie 80" Media Console</td>
+            <td>Woven fiber on solid sungkai wood gives our Prairie media console a beachy, breezy feel. Inspired by the respect for
+            craft and materials expressed by 19th-century Arts and Crafts design </td>
+            <td>€1,799.00</td>
+        </tr>
+
+        <tr>
+            <td><img src="sofa.jpeg" alt="a sofa"><a href="https://www.crateandbarrel.com/hague-mid-century-sofa/s411953" target="_blank">VIEW</a></td>
+            <td>Hague Mid-Century Sofa</td>
+            <td>Mid-century modern details reassemble in our up-to-the-minute Hague sofa. Flared arms, tapered conical legs, nestled
+            cushions and a chamfered back all speak to the style's timeless chic </td>
+            <td>€1,899.00</td>
+        </tr>
+
+        <tr>
+            <td><img src="chair.jpeg" alt="a chair"><a href="https://www.crateandbarrel.com/ankara-natural-cane-chair-with-ivory-cushion/s377081" target="_blank">VIEW</a></td>
+            <td>Ankara Natural Cane Chair with Ivory Cushion</td>
+            <td>Our best-selling Ankara chair tries on a new look in on-trend cane. In keeping with Ankara's tropical vibe, the chair
+            backs its barrel curves with a breezy weave of natural cane </td>
+            <td>799.00</td>
+        </tr>
+    </table>
+
+    <div>
+        <h3>E-mail:<input type="email" placeholder="Enter your email address" style="width: 25%;"></h3>
+        <textarea cols="50" rows="10" placeholder="Your messages" style="display: block;"></textarea>
+        <button style="display: block;"> Send</button>
+    </div>
+
+    <footer id="footer">
+        
+        <h4> Tel: 017774564554 <br> Hauptbahnof Weg 102, 22005, Hamburg </h4>
+    </footer>
+    <script>
+    // EX7: Write a function to change the h1 text to something else
+
+      function changeH1text(){
+
+        let changeH1Node = document.getElementById("id01");
+          changeH1Node.innerHTML = "Strive furnitures";
+      }
+      changeH1text()
+
+
+    // EX8: Write a function to change the page background color
+    function changePageBackground() {
+            document.getElementById("body").style.backgroundColor = "white";
+        }
+
+    changePageBackground()
+
+
+
+// EX9: Write a function to change the footer address with a fake one
+
+    function changeFooter() {
+
+        let changeFooterNode = document.getElementById("footer");
+        changeFooterNode.innerHTML = "<h4> Tel: 017773636364554 <br> Unna Weg 102, 22865, Berlin </h4>";
+    }
+    changeFooter()
+
+   
+    
+
+
+    </script>
+    
+</body>
+</html>
